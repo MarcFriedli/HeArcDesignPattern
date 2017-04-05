@@ -2,25 +2,22 @@
 #define FRUIT_H
 
 #include <string>
+#include <iostream>
 
-using namespace std;
 
 class Fruit
 {
     public:
-        Fruit();
-        virtual ~Fruit();
-        virtual string toString() = 0;
-        virtual bool contientPepin() = 0;
-    protected:
-        string getName(){ return name;}
-        void setName(string _name) {name = _name;}
+        Fruit(std::string _name, bool _pepin){name = _name; pepin = _pepin;}
+        virtual ~Fruit(){};
+        virtual std::string toString(){return name;};
+        virtual bool contientPepin(){return pepin;};
 
-        bool getPepin(){ return pepin;}
-        void setPepin(bool _pepin) { pepin = _pepin;}
+
+    protected:
 
     private:
-        string name;
+        std::string name;
         bool pepin;
 
 };
