@@ -7,7 +7,7 @@
 class SingleSlashDecorator: public FruitDecorator
 {
     public:
-        SingleSlashDecorator(Fruit fruit);
+        SingleSlashDecorator(Fruit *fruit);
         virtual ~SingleSlashDecorator();
     protected:
     private:

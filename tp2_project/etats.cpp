@@ -1,11 +1,11 @@
 #include "etats.h"
 
-etat::etat()
+Etat::Etat()
 {
     //ctor
 }
 
-etat::~etat()
+Etat::~Etat()
 {
     //dtor
 }

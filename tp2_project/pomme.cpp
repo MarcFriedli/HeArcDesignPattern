@@ -2,12 +2,23 @@
 
 #include <iostream>
 
-Pomme::Pomme():Fruit("Pomme",true)
+Pomme::Pomme()
 {
-    //ctor
+    name="Pomme";
+    pepin=true;
 }
 
 Pomme::~Pomme()
 {
     //dtor
+}
+
+std::string Pomme::toString()
+{
+    return name;
+}
+
+bool Pomme::contientPepin()
+{
+    return false;
 }

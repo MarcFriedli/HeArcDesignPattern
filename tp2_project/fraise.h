@@ -9,6 +9,8 @@ class Fraise:public Fruit
     public:
         Fraise();
         virtual ~Fraise();
+        std::string toString();
+        bool contientPepin();
     protected:
     private:
 };

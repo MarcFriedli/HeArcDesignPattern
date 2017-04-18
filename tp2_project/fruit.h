@@ -8,15 +8,11 @@
 class Fruit
 {
     public:
-        Fruit(std::string _name, bool _pepin){name = _name; pepin = _pepin;}
         virtual ~Fruit(){};
-        virtual std::string toString(){return name;};
-        virtual bool contientPepin(){return pepin;};
-
+        virtual std::string toString()=0;
+        virtual bool contientPepin(){return pepin;}
 
     protected:
-
-    private:
         std::string name;
         bool pepin;
 

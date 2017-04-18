@@ -34,12 +34,30 @@
 		</Compiler>
 		<Unit filename="banane.cpp" />
 		<Unit filename="banane.h" />
+		<Unit filename="etatattente.cpp" />
+		<Unit filename="etatattente.h" />
+		<Unit filename="etatcontext.cpp" />
+		<Unit filename="etatcontext.h" />
+		<Unit filename="etatenvoyee.cpp" />
+		<Unit filename="etatenvoyee.h" />
+		<Unit filename="etatpayee.cpp" />
+		<Unit filename="etatpayee.h" />
+		<Unit filename="etats.cpp" />
+		<Unit filename="etats.h" />
 		<Unit filename="fraise.cpp" />
 		<Unit filename="fraise.h" />
 		<Unit filename="fruit.h" />
+		<Unit filename="fruitdecorator.cpp" />
+		<Unit filename="fruitdecorator.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="pomme.cpp" />
 		<Unit filename="pomme.h" />
+		<Unit filename="sharpdecorator.cpp" />
+		<Unit filename="sharpdecorator.h" />
+		<Unit filename="singleslashdecorator.cpp" />
+		<Unit filename="singleslashdecorator.h" />
+		<Unit filename="tripleslashdecorator.cpp" />
+		<Unit filename="tripleslashdecorator.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />

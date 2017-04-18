@@ -9,6 +9,8 @@ class Pomme : public Fruit
     public:
         Pomme();
         ~Pomme();
+        std::string toString();
+        bool contientPepin();
     protected:
     private:
 };

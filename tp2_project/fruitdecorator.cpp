@@ -1,8 +1,12 @@
-#include "fruitdecorator.h"
+#include"fruitdecorator.h"
 
-FruitDecorator::FruitDecorator(Fruit _fruit)
+#include<list>
+
+using std::string;
+
+FruitDecorator::FruitDecorator(Fruit *_fruit)
 {
-    fruit = _fruit;
+    fruit=_fruit;
 }
 
 FruitDecorator::~FruitDecorator()
@@ -10,7 +14,14 @@ FruitDecorator::~FruitDecorator()
     //dtor
 }
 
-FruitDecorator::toString()
+string FruitDecorator::toString()
 {
-    std::cout<<decorator[0]<<fruit.toString()<<decorator[1]<<(fruit.contientPepin())?"Avec":"Sans"<<" pépin."<<decorator[3]<<std::endl;
+    string bigString="";
+    bigString+=decorator[0];
+    bigString+=fruit->toString();
+    bigString+=decorator[1];
+    bigString+=(fruit->contientPepin()?"Avec":"Sans");
+    bigString+=" pépin";
+    bigString+=decorator[2];
+    return bigString;
 }

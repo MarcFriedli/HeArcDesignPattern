@@ -1,17 +1,16 @@
 #ifndef ETATS_H
 #define ETATS_H
-#include "contexte.h"
 
 
-class etat
+class Etat
 {
     public:
-        etat();
-        void Action() { DoSomething(); }
-        virtual ~etat();
+        Etat();
+        void action() { doSomething(); }
+        virtual ~Etat();
 
     protected:
-        virtual void DoSomething() = 0;
+        virtual void doSomething() = 0;
 
     private:
 

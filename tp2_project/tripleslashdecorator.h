@@ -1,11 +1,12 @@
 #ifndef TRIPLESLASHDECORATOR_H
 #define TRIPLESLASHDECORATOR_H
 
+#include "fruitdecorator.h"
 
-class TripleSlashDecorator
+class TripleSlashDecorator: public FruitDecorator
 {
     public:
-        TripleSlashDecorator(Fruit fruit);
+        TripleSlashDecorator(Fruit *fruit);
         virtual ~TripleSlashDecorator();
     protected:
     private:

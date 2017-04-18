@@ -1,6 +1,6 @@
 #include "sharpdecorator.h"
 
-SharpDecorator::SharpDecorator(Fruit fruit)
+SharpDecorator::SharpDecorator(Fruit *fruit)
     :FruitDecorator(fruit)
 {
     decorator[0]='{';

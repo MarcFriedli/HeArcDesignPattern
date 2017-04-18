@@ -3,13 +3,14 @@
 
 #include "fruit.h"
 #include <iostream>
-#include <string>
 
 class Banane : public Fruit
 {
     public:
         Banane();
         ~Banane();
+        std::string toString();
+        bool contientPepin();
     protected:
     private:
 };

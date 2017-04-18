@@ -7,11 +7,11 @@
 class FruitDecorator : public Fruit
 {
     public:
-        FruitDecorator(Fruit _fruit);
+        FruitDecorator(Fruit *_fruit);
         virtual ~FruitDecorator();
         std::string toString();
     protected:
-        Fruit fruit;
+        Fruit *fruit;
         char decorator[3];
     private:
 };

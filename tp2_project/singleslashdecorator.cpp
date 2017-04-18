@@ -1,6 +1,6 @@
 #include "singleslashdecorator.h"
 
-SingleSlashDecorator::SingleSlashDecorator(Fruit fruit)
+SingleSlashDecorator::SingleSlashDecorator(Fruit *fruit)
     :FruitDecorator(fruit)
 {
     decorator[0]='<';

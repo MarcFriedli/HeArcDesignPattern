@@ -1,13 +1,23 @@
 #include "fraise.h"
-
 #include <iostream>
 
-Fraise::Fraise():Fruit("Fraise",false)
+Fraise::Fraise()
 {
-    //ctor
+    name="Fraise";
+    pepin=false;
 }
 
 Fraise::~Fraise()
 {
     //dtor
+}
+
+std::string Fraise::toString()
+{
+    return name;
+}
+
+bool Fraise::contientPepin()
+{
+    return false;
 }

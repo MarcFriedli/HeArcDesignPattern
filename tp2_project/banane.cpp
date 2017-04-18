@@ -1,16 +1,23 @@
 #include "banane.h"
 #include "fruit.h"
-#include <iostream>
-#include <string>
 
-using namespace std;
-
-Banane::Banane() : Fruit("Banane", false)
+Banane::Banane()
 {
-    //ctor
+    name="Banane";
+    pepin=false;
 }
 
 Banane::~Banane()
 {
 
+}
+
+std::string Banane::toString()
+{
+    return name;
+}
+
+bool Banane::contientPepin()
+{
+    return false;
 }
