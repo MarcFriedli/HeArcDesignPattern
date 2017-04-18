@@ -1,0 +1,35 @@
+# depslib dependency file v1.0
+1491399299 source:c:\users\marc.friedli\documents\he-arc\2eme\design patern\git\hearcdesignpattern\tp2_project\banane.cpp
+	"banane.h"
+	"fruit.h"
+	<iostream>
+	<string>
+
+1491399322 c:\users\marc.friedli\documents\he-arc\2eme\design patern\git\hearcdesignpattern\tp2_project\banane.h
+	"fruit.h"
+	<iostream>
+	<string>
+
+1491399331 c:\users\marc.friedli\documents\he-arc\2eme\design patern\git\hearcdesignpattern\tp2_project\fruit.h
+	<string>
+	<iostream>
+
+1491399345 source:c:\users\marc.friedli\documents\he-arc\2eme\design patern\git\hearcdesignpattern\tp2_project\main.cpp
+	<iostream>
+	"banane.h"
+	"fruit.h"
+
+1491399543 source:c:\users\marc.friedli\documents\he-arc\2eme\design patern\git\hearcdesignpattern\tp2_project\fraise.cpp
+	"fraise.h"
+	<iostream>
+
+1491399486 c:\users\marc.friedli\documents\he-arc\2eme\design patern\git\hearcdesignpattern\tp2_project\fraise.h
+	"fruit.h"
+
+1491399426 source:c:\users\marc.friedli\documents\he-arc\2eme\design patern\git\hearcdesignpattern\tp2_project\pomme.cpp
+	"pomme.h"
+	<iostream>
+
+1491399400 c:\users\marc.friedli\documents\he-arc\2eme\design patern\git\hearcdesignpattern\tp2_project\pomme.h
+	"fruit.h"
+
