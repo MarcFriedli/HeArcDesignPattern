@@ -1,4 +1,4 @@
-std::string#include "Potatos.h"
+#include "Potatos.h"
 
 Potatos::Potatos()
 {

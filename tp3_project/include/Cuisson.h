@@ -8,6 +8,9 @@ class Cuisson : public AbstractFactory
     public:
         Cuisson();
         virtual ~Cuisson();
+        Vegetables* createVegetables()=0;
+        Oil* createOils()=0;
+        Herbs* createHerbes()=0;
         std::string getName();
 
     protected:
