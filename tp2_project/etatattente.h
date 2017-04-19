@@ -3,7 +3,7 @@
 
 #include "etats.h"
 #include <iostream>
-
+#include "commande.h"
 
 class EtatAttente : public Etat
 {
@@ -11,7 +11,7 @@ class EtatAttente : public Etat
         EtatAttente();
         virtual ~EtatAttente();
     protected:
-        void doSomething();
+        void traiter(Commande *commande);
     private:
 };
 

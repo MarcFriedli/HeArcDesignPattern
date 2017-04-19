@@ -1,18 +1,18 @@
 #ifndef COMMANDE_H
 #define COMMANDE_H
 
+class Etat;
 
-class State
+class Commande
 {
     public:
-        State();
-        void traiter() { DoSomething(); };
-        virtual ~State();
-
+        Commande();
+        virtual ~Commande();
+        void setEtat(Etat *nouvelEtat);
+        void avancement();
     protected:
-
+        Etat *etatActuel;
     private:
-        int state;
 };
 
 #endif // COMMANDE_H

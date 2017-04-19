@@ -7,6 +7,7 @@
 #include "sharpdecorator.h"
 #include "singleslashdecorator.h"
 #include "tripleslashdecorator.h"
+#include "commande.h"
 
 using namespace std;
 
@@ -22,6 +23,8 @@ int main()
     list<Fruit*>::iterator it;	//ou auto it = lst.begin()
     for (it = panier.begin(); it != panier.end(); it++)
         cout << (*it)->toString() << endl;
+
+    Commande *com = new Commande();
 
     return 0;
 }

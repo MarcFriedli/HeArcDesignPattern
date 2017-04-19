@@ -1,17 +1,13 @@
 #ifndef ETATS_H
 #define ETATS_H
 
+#include "commande.h"
 
 class Etat
 {
     public:
-        Etat();
-        void action() { doSomething(); }
-        virtual ~Etat();
-
-    protected:
-        virtual void doSomething() = 0;
-
+        virtual ~Etat(){};
+        virtual void traiter(Commande *commande) = 0;
     private:
 
 };

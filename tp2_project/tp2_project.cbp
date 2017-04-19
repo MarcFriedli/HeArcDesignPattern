@@ -34,15 +34,14 @@
 		</Compiler>
 		<Unit filename="banane.cpp" />
 		<Unit filename="banane.h" />
+		<Unit filename="commande.cpp" />
+		<Unit filename="commande.h" />
 		<Unit filename="etatattente.cpp" />
 		<Unit filename="etatattente.h" />
-		<Unit filename="etatcontext.cpp" />
-		<Unit filename="etatcontext.h" />
 		<Unit filename="etatenvoyee.cpp" />
 		<Unit filename="etatenvoyee.h" />
 		<Unit filename="etatpayee.cpp" />
 		<Unit filename="etatpayee.h" />
-		<Unit filename="etats.cpp" />
 		<Unit filename="etats.h" />
 		<Unit filename="fraise.cpp" />
 		<Unit filename="fraise.h" />

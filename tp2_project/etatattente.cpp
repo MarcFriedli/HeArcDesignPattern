@@ -1,4 +1,5 @@
 #include "etatattente.h"
+#include "etatpayee.h"
 
 EtatAttente::EtatAttente()
 {
@@ -10,7 +11,9 @@ EtatAttente::~EtatAttente()
     //dtor
 }
 
-void EtatAttente::doSomething()
+void EtatAttente::traiter(Commande *commande)
 {
-    std::cout << "état : en attente..." << std::endl;
+    commande->setEtat(new EtatPayee);
+    commande->avancement();
+
 }

@@ -10,7 +10,8 @@ EtatEnvoyee::~EtatEnvoyee()
     //dtor
 }
 
-void EtatEnvoyee::doSomething()
+void EtatEnvoyee::traiter(Commande *commande)
 {
     std::cout<<"SENT"<<std::endl;
+    delete commande;
 }
