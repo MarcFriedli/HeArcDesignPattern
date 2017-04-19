@@ -21,7 +21,7 @@ string FruitDecorator::toString()
     bigString+=fruit->toString();
     bigString+=decorator[1];
     bigString+=(fruit->contientPepin()?"Avec":"Sans");
-    bigString+=" pépin";
+    bigString+=" pepin";
     bigString+=decorator[2];
     return bigString;
 }
