@@ -1,7 +1,7 @@
 #ifndef FRUITDECORATOR_H
 #define FRUITDECORATOR_H
 
-#include "fruit.h"
+#include "../Composite/fruit.h"
 #include <iostream>
 
 class FruitDecorator : public Fruit

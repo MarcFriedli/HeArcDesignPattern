@@ -1,13 +1,13 @@
 #include <iostream>
 #include <list>
-#include "banane.h"
-#include "pomme.h"
-#include "fraise.h"
-#include "fruit.h"
-#include "sharpdecorator.h"
-#include "singleslashdecorator.h"
-#include "tripleslashdecorator.h"
-#include "commande.h"
+#include "composite/banane.h"
+#include "composite/pomme.h"
+#include "composite/fraise.h"
+#include "composite/fruit.h"
+#include "decorator/sharpdecorator.h"
+#include "decorator/singleslashdecorator.h"
+#include "decorator/tripleslashdecorator.h"
+#include "state/commande.h"
 
 using namespace std;
 
@@ -27,6 +27,7 @@ void decorerFruit(Fruit *fruit)
     int typeDeco=0;
     while(typeDeco<1 || typeDeco>4)
     {
+        cout<<"Choisissez votre decoration : \n"<<endl;
         cout<<"1) {deco1}"<<endl;
         cout<<"2) <deco3>"<<endl;
         cout<<"3) /deco2/"<<endl;
@@ -58,6 +59,7 @@ void ajouterPanier()
     Fruit *newFruit;
     char typeFruit;
     while(typeFruit!='b' && typeFruit!='f' && typeFruit!='p'){
+        cout<<"Choisissez un fruit :\n"<<endl;
         cout<<"b) ajouter une banane"<<endl;
         cout<<"f) ajouter une fraise"<<endl;
         cout<<"p) ajouter une pomme"<<endl;
