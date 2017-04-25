@@ -2,15 +2,18 @@
 #define CUISSON_H
 #include "AbstractFactory.h"
 #include <iostream>
+#include "Vegetables.h"
+#include "Oil.h"
+#include "Herbs.h"
 
 class Cuisson : public AbstractFactory
 {
     public:
         Cuisson();
         virtual ~Cuisson();
-        Vegetables* createVegetables()=0;
-        Oil* createOils()=0;
-        Herbs* createHerbes()=0;
+        Vegetables* createVegetables();
+        Oil* createOils();
+        Herbs* createHerbes();
         std::string getName();
 
     protected:
